@@ -1,0 +1,64 @@
+This is the Implementation Guide
+
+**Initial Version V0.0**
+- Requested input and output as detailed by client (Savannah King)
+- See Developer notes at bottom
+
+Inputting practices 
+    Capable of having rounds of sets (ability to select a section of the practice and times by n rounds)
+    Duplicate sets (if you have rounds with slight differences, it would be good to have the ability to duplicate a set and make slight adjustments)
+    Ability to input the approximate effort level (percentage) for each part of the set
+    8x50 at 85% @50 - 3x100 at 100% @2:30 etc.
+
+
+Coding practices
+    Work to Rest Ratios  - based on the approximate speed of male or female swimmer (eg. If we have an average female time of 30 seconds for a 100% 50m back, if we have max effort 50m on 1:00, it would be a 1:1 work to rest ratio)
+    This means we need to have approximate times for the group of athletes for each stroke 50 
+    We should divide these into male and female times because they will be different
+    We would need to be able to input these numbers in order to find the W:R ratios  
+    You’ll also need to relate the % of effort for the set with the max speed of that stroke.  – This will be complicated because if 30s is the max speed, what is 50% ? (We won’t have a number for 0%). We may have to input a 50% level time – We wouldn’t use less than 50%.
+    The work to rest intervals will correspond to an intensity zone (see below)
+
+
+Desired Output:
+    Output weekly mileage  
+    Output a graph with the percentage of the practice spent in each zone, and the mileage swum in each zone.
+    Output weekly and monthly numbers for the same ^
+
+
+
+========================================
+Intensity Zones
+Zone	Work to Rest 
+1 – Aerobic Capacity	3:1 +
+2 – Aerobic - Power	1:3 – 3:1
+3 – Glycolytic - Capacity	1:4 – 1:8
+4 – Glycolytic - Power	1:12-1:8
+5 – ATP-CP Capacity	1:16-1:12
+6 – ATP-CP Power	1:20-1:16
+========================================
+
+
+
+
+Developer Notes:
+
+So far implementation requests require:
+- An easy to use GUI for inputting practices
+- A data-parsing/processing section
+- A database to store data 
+    - Database to *start out* local and on a per-workout basis, seperated by men/women
+- A graphical output for the processed data
+
+Future Implementation:
+- Practice parsing software (I AM CONVINCED THIS IS EXTREMELY DIFFICULT. NATURAL LANGUAGE PROCESSING WHERE EVEN SWIMMERS CAN'T AGREE ON WHAT THE WORKOUT MEANS)
+- Per swimmer database, maybe set up a server on a microcontroller (RasPi, Beaglebone black wifi)
+- Analyze how well practices are working for swimmers by scrubbing swimrankings for PBs and meet results (over 1 year this should give a decent indication of the swimmer's training reauirements)
+
+
+
+
+
+
+
+
