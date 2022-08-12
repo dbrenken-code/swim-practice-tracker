@@ -50,11 +50,15 @@ So far implementation requests require:
     - Database to *start out* local and on a per-workout basis, seperated by men/women
 - A graphical output for the processed data
 
-Future Implementation:
-- Practice parsing software (I AM CONVINCED THIS IS EXTREMELY DIFFICULT. NATURAL LANGUAGE PROCESSING WHERE EVEN SWIMMERS CAN'T AGREE ON WHAT THE WORKOUT MEANS)
-- Per swimmer database, maybe set up a server on a microcontroller (RasPi, Beaglebone black wifi)
-- Analyze how well practices are working for swimmers by scrubbing swimrankings for PBs and meet results (over 1 year this should give a decent indication of the swimmer's training reauirements)
 
+Developer Requirements:
+
+
+
+Current Workflow:
+- Framework(?)
+- HeroKu (for database)
+https://mcgill-ecse321-fall2020.github.io/ecse321-tutorial-notes/
 
 
 
