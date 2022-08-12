@@ -1,0 +1,4 @@
+Future Implementation:
+- Practice parsing software (I AM CONVINCED THIS IS EXTREMELY DIFFICULT. NATURAL LANGUAGE PROCESSING WHERE EVEN SWIMMERS CAN'T AGREE ON WHAT THE WORKOUT MEANS)
+- Per swimmer database, maybe set up a server on a microcontroller (RasPi, Beaglebone black wifi)
+- Analyze how well practices are working for swimmers by scrubbing swimrankings for PBs and meet results (over 1 year this should give a decent indication of the swimmer's training reauirements)
