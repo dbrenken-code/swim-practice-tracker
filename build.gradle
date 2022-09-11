@@ -1,0 +1,3 @@
+task stage () {
+    dependsOn ':SwimPractice-Backend:assemble'
+}
